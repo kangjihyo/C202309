@@ -1,12 +1,14 @@
 #include <stdio.h>
 #define NUMCITY 3
 #define NUMPEOPLE 2
-
+//전역변수 names, cities 선언
 char names[NUMPEOPLE][10];
 char cities[NUMCITY][10];
 
+//함수 calculateTravelDays() 원형 선언
 void calculateTravelDays();
 
+//각각의 배열에서 for문을 이용하여 각각의 인덱스에 들어있는 값을 이용하며 문장을 출력함.
 int main() {
 
 	printf("%d개의 도시명을 차례때로 입력해주세요.\n", NUMCITY);
@@ -23,6 +25,7 @@ int main() {
 
 	return 0;
 }
+
 
 void calculateTravelDays() {
 	int travelDays[NUMCITY][NUMPEOPLE];
