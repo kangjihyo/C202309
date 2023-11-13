@@ -2,10 +2,11 @@
 
 int hapf(int value); //함수를 메인 함수 뒤에서 만들기 때문에 함수 원형 선언 해줌.
 
-void main() {
+int main() {
 	printf("1부터     10까지의 합은 %d\n", hapf(10));
 	printf("1부터   100까지의 합은 %d\n", hapf(100));
 	printf("1부터 1000까지의 합은 %d\n", hapf(1000));
+	return 0;
 	}
 int hapf(int value) { // 매개변수를 value로 지장
 	int i = 1; 
